@@ -33,7 +33,6 @@ module.exports.datastores = {
   ***************************************************************************/
 
   default: {
-
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *
@@ -53,6 +52,4 @@ module.exports.datastores = {
     adapter: 'sails-mysql',
     url: 'mysql://root@localhost:3306/artemis',
   },
-
-
 };
