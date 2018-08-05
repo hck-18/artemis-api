@@ -5,6 +5,8 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
+const calculateDistance = require('./classes/distance');
+
 module.exports = {
   _config: { actions: false, rest: false, shortcuts: false },
   view: async (req, res) => {
@@ -52,7 +54,8 @@ module.exports = {
       "establishment": {
         "id": establishment.id,
         "name": establishment.name,
-        "distance": sails.helpers.distance(req.query.lat, req.query.lng, establishment.lat, establishment.lng, 'K'),
+        // "distance": sails.helpers.distance(req.query.lat, req.query.lng, establishment.lat, establishment.lng, 'K'),
+        "distance": calculateDistance(req.query.lat, req.query.lng, establishment.lat, establishment.lng, 'K'),
         "verified": true
       }
     });
