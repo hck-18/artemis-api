@@ -11,6 +11,10 @@ module.exports = {
     barcode: { type: 'string', required: true },
     brands_id: { type: 'number' },
     barcode_type: { type: 'string' },
+    establishments: {
+      collection: 'establishment',
+      via: 'products'
+    }
   },
 };
 

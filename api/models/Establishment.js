@@ -13,7 +13,11 @@ module.exports = {
     lng: { type: 'number', required: true, columnType: 'float' },
     address: { type: 'string', required: true },
     cities_id: { type: 'number', required: true },
-    verified: { type: 'boolean', defaultsTo: true }
+    verified: { type: 'boolean', defaultsTo: true },
+    products: {
+      collection: 'product',
+      via: 'establishments'
+    }
   },
 
 };

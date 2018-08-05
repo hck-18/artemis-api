@@ -1211,8 +1211,8 @@ module.exports.seeds = {
     { id: 1202, barcode: '04111146', name: '04001 0', barcode_type: 'EAN_8' },
     { id: 1203, barcode: '04111146', name: '1400 14', barcode_type: 'EAN_8' },
   ],
-  establishmentProduct: [
-    { id: 0, establishmentId: 1, productId: 0 },
+  establishmentproduct: [
+    { id: 1123123123, establishmentId: 1, productId: 0 },
     { id: 1, establishmentId: 1, productId: 1 },
     { id: 2, establishmentId: 1, productId: 2 },
     { id: 3, establishmentId: 1, productId: 3 },
