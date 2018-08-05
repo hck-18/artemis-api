@@ -8,7 +8,7 @@
 module.exports = {
   attributes: {
     active: { type: 'boolean', defaultsTo: false },
-    establishments_has_products_id: { type: 'number', required: true },
+    establishmentProductId: { type: 'number', required: true },
     price: { type: 'number', required: true, columnType: 'float' },
   },
 };
