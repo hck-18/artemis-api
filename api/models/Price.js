@@ -8,7 +8,7 @@
 module.exports = {
   attributes: {
     id: { type: 'number', required: true },
-    active: { type: 'boolean', defaultsType: false },
+    active: { type: 'boolean', defaultsTo: false },
     establishments_has_products_id: { type: 'number', required: true },
   },
 };
