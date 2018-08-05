@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
     name: { type: 'string', required: true },
-    lat: { type: 'number', required: true, columnType: 'float' }
+    lat: { type: 'number', required: true, columnType: 'float' },
     lng: { type: 'number', required: true, columnType: 'float' },
     address: { type: 'string', required: true },
     cities_id: { type: 'number', required: true },
