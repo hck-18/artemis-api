@@ -10,7 +10,6 @@ module.exports = {
     id: { type: 'number', required: true },
     name: { type: 'string', required: true },
     barcode: { type: 'string', required: true },
-    price: { type: 'string', required: true },
     brands_id: { type: 'number' },
     barcode_type: { type: 'string' },
   },
