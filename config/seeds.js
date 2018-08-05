@@ -355,5 +355,10 @@ module.exports.seeds = {
     { barcode: '7702045520972', name: 'KONZIL CREMA PE', barcode_type: 'EAN_13' },
     { barcode: '7506309825946', name: 'DETERGENTE EN P', barcode_type: 'EAN_13' },
     { barcode: '7702026166212', name: 'PAPEL HIGIENICO', barcode_type: 'EAN_13' },
+  ],
+  city: [
+    { id: 1, name: 'Bogotá' },
+    { id: 2, name: 'Cali' },
+    { id: 3, name: 'Medellín' }
   ]
 }

@@ -7,7 +7,6 @@
 
 module.exports = {
   attributes: {
-    id: { type: 'number', required: true },
     prices_id: { type: 'number', required: true },
     positive: { type: 'boolean', defaultsTo: true},
   },

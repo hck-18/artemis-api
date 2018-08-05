@@ -6,13 +6,10 @@
  */
 
 module.exports = {
-
   attributes: {
     price: {type: 'string', required: false},
-    start_date: {type: 'string', required: false},
-    end_date: {type: 'string', required: false},
-    establishments_has_products: {type: 'string', required: false},
+    date: {type: 'string', required: false},
+    establishments_has_products_id: {type: 'number', required: true},
   },
-
 };
 

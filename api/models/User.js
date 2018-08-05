@@ -6,9 +6,7 @@
  */
 
 module.exports = {
-
   attributes: {
-    id: {type: 'number', required: true},
     name: {type: 'string', required: true},
     email: {type: 'string', required: true},
     cities_id: {type: 'number', required: true}
