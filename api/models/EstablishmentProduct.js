@@ -11,13 +11,9 @@ module.exports = {
     productId: { type: 'number', required: true },
     product: {
       model: 'product',
-      via: 'productId',
-      unique: true
     },
     establishment: {
       model: 'establishment',
-      via: 'establishmentId',
-      unique: true
     }
   },
 };
