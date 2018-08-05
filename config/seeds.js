@@ -360,5 +360,34 @@ module.exports.seeds = {
     { id: 1, name: 'Bogotá' },
     { id: 2, name: 'Cali' },
     { id: 3, name: 'Medellín' }
+  ],
+  establishment: [
+    {
+      id: 1,
+      name: 'Ara 94',
+      lat: '4.685236',
+      lng: '-74.049870',
+      address: 'Ac. 100 #17 13',
+      cities_id: 1,
+      verified: true
+    },
+    {
+      id: 2,
+      name: 'D1 93',
+      lat: '4.676244',
+      lng: '-74.046818',
+      address: 'Cra. 11 #93a65',
+      cities_id: 1,
+      verified: true
+    },
+    {
+      id: 3,
+      name: 'Carulla Express calle 95',
+      lat: '4.680296',
+      lng: '-74.048761',
+      address: 'Cl. 95 #13-55,',
+      cities_id: 1,
+      verified: true
+    },
   ]
 }
