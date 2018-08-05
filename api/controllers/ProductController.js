@@ -19,7 +19,7 @@ module.exports = {
         establishmentId: req.query.establishmentId,
         productId: req.params.id,
       }
-    });
+    }).populate('product').populate('establishment');
 
     console.log('establishmentProduct: ', establishmentProduct);
 
@@ -31,6 +31,10 @@ module.exports = {
 
     const product = establishmentProduct.product;
     const establishment = establishmentProduct.establishment;
+
+    if (!product || !establishment) {
+      return res.status(400).send('Something is very bad');
+    }
 
     const price = await Price.findOne({ where: { establishmentProductId: establishmentProduct.id, active: true } });
 
