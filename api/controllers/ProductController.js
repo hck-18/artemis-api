@@ -14,10 +14,10 @@ module.exports = {
 
     console.log('ID: ', req.params.id);
 
-    const establishmentProduct = await EstablishmentProduct.findOne({
+    const establishmentProduct = await Establishmentproduct.findOne({
       where: {
-        establishmentId: req.query.establishmentId,
-        productId: req.params.id,
+        establishment: req.query.establishmentId,
+        product: req.params.id,
       }
     }).populate('product').populate('establishment');
 
